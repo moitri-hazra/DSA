@@ -22,4 +22,16 @@ function binarySearch(arr, target) {
   // Testcases
   const array = [3, 5, 10, 16, 20, 21, 25, 30];
   console.log(binarySearch(array, 30)); // This will return 7
+
+ function print(arr) {
+  if (arr.length !== 0) {
+    let lastElement = arr[arr.length - 1];
+    console.log(lastElement); // Print the last element
+    arr.pop(); // Remove the last element
+    print(arr); // Recursively call print with the updated array
+  }
+}
+
+const arr = [1, 2, 3, 4, 5];
+print(arr);
   

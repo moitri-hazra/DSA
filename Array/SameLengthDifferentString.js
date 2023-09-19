@@ -29,4 +29,7 @@ function findSameLength(arr) {
 //testcases
 
 const arr = ['aab', 'sold', 'skt', 'bold'];
+
 console.log(findSameLength(arr));
+
+
