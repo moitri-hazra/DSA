@@ -8,12 +8,8 @@ function intToRoman(num) {
   
     for (let i = 0; i < values.length; i++) {
       while (num >= values[i]) {
-        console.log(num);
-        console.log(romanNumerals[i]);
         result += romanNumerals[i];
-        console.log('1 this' + num);
         num -= values[i];
-        console.log(num);
       }
     }
   
