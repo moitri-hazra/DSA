@@ -21,16 +21,16 @@ Output: 3
 function findDuplicate (arr){
     let sorted = arr.sort(function(a,b) { return a-b; }); // sorting the array so the duplicate values are side by side
     let stack = []; // creating an ampty array so can check if the value already exists or not
-    for(let i=0; i < arr.length; i++){
-        if(stack[stack.length-1] ===arr[i]){ //checking if the last element of new array is equal to the arr[i]
-            return arr[i]; // if true returning the duplicate value
+    for(let i=0; i < sorted.length; i++){
+        if(stack[stack.length-1] ===sorted[i]){ //checking if the last element of new array is equal to the arr[i]
+            return sorted[i]; // if true returning the duplicate value
         }else{
-            stack.push(arr[i]); // if false pushing the value in stack
+            stack.push(sorted[i]); // if false pushing the value in stack
         }
     }
 }
 
 //testcases
 
-const Array =[3,1,3,4,2];
+const Array =[6, 8, 0, 4, 8];
 console.log(findDuplicate(Array));
