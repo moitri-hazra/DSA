@@ -15,5 +15,5 @@ function canJump(nums) {
 
 //testcase 
 
-const arr = [3,2,1,0,4]; 
+const arr = [3,2,1,1,4]; 
 console.log(canJump(arr));
